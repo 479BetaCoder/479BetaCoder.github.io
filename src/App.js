@@ -16,7 +16,7 @@ class App extends React.Component {
           <Route exact path="/" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
         </div>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
       </BrowserRouter>
     );
