@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import { Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
+import Footer from "./components/Footer/Footer";
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <Route exact path="/" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
         </div>
+        {/* <Footer></Footer> */}
       </div>
       </BrowserRouter>
     );
