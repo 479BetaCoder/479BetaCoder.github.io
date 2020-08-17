@@ -1,4 +1,5 @@
 import React from "react";
+import './Footer.css';
 
 export default class Footer extends React.Component {
   render() {
@@ -15,12 +16,12 @@ export default class Footer extends React.Component {
             </a>
           </div>
         </section>
-        <footer class="border">
+        <footer className="border">
           <p>
-            <bold>
+            <b>
               Ravi Kumar &copy;{" "}
               <span id="footer-date">{new Date().getFullYear()}</span>
-            </bold>
+            </b>
           </p>
         </footer>
       </div>

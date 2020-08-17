@@ -1,38 +1,121 @@
-.avatarContainer {
-    height: 8em;
-    width: 8em;
-    border-radius: 4em;
-    position: absolute;
-    top: -60px;
-    align-items: center;
-    border: 1px solid #ab2537fa;
-    border-radius: 8em;
+.avatar {
+  height: 8em;
+  width: 8em;
+  border-radius: 4em;
+  align-items: center;
+  box-shadow: 5px 5px 5px lightgrey;
 }
 
 @media (min-width: 600px) {
-    .avatarContainer {
-    height: 14em;
-    width: 14em;
-    border-radius: 7em;
-    position: absolute;
-    top: -100px;
+  .avatar {
+    height: 10em;
+    width: 10em;
+    border-radius: 5em;
     align-items: center;
-    border: 1px solid #ab2537fa;
-    border-radius: 8em;
-    }
+    box-shadow: 5px 5px 5px lightgrey;
+  }
 }
 
+.introContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  font-weight: 700;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.splMention {
+  color: #ab2537fa;
+  text-decoration: underline;
+  font-weight: 500;
+}
 
 .aboutContainer {
-    display: flex;
-    justify-content: center;
-    margin: 2em;
-    padding: 2em;
-    border-radius: 3px;
-    border: 1px solid #ab2537fa;
-    min-height: 400px;
-    font-weight: 200;
-    text-indent: 0.35in;
-    position: relative;
-    
+  max-width: 60em;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 960px) {
+  section:nth-of-type(2) .bar {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  section:nth-of-type(2) .bar {
+    font-size: 11pt;
+    height: 28px;
+    margin: 0 0 15px 0;
+  }
+}
+
+section:nth-of-type(2) .bar {
+  align-items: flex-end;
+  background-color: #eee;
+  color: #000;
+  position: relative;
+  font-size: 7pt;
+  height: 22px;
+  margin: 0 0 12px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:nth-of-type(2) .bar:nth-child(1) .fill {
+  transition: 1.1s 0.2s width ease-in-out;
+}
+
+section:nth-of-type(2) .bar.fill {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #291c26a6;
+  opacity: 1;
+  padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+  section:nth-of-type(2) .bar .tag {
+    width: 110px;
+  }
+}
+
+section:nth-of-type(2) .bar .tag {
+  left: 0;
+  position: absolute;
+  top: 0;
+  background-color: #ab2537fa;
+  color: #fff;
+  height: 100%;
+  width: 70px;
+}
+
+.toolSetContainer {
+  padding-left: 1em;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 600px) {
+  section:nth-of-type(2) .bar span {
+    display: initial;
+  }
+}
+
+section:nth-of-type(2) .bar span {
+  padding: 0 15px 0 0;
+  z-index: 1;
 }
