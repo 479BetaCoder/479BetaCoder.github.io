@@ -41,21 +41,8 @@
   margin-right: auto;
 }
 
-@media screen and (min-width: 960px) {
-  section:nth-of-type(2) .bar {
-    max-width: 90%;
-  }
-}
 
-@media screen and (min-width: 600px) {
-  section:nth-of-type(2) .bar {
-    font-size: 11pt;
-    height: 28px;
-    margin: 0 0 15px 0;
-  }
-}
-
-section:nth-of-type(2) .bar {
+.bar {
   align-items: flex-end;
   background-color: #eee;
   color: #000;
@@ -63,20 +50,16 @@ section:nth-of-type(2) .bar {
   font-size: 7pt;
   height: 22px;
   margin: 0 0 12px 0;
+  max-width: 90%;
 }
 
 .flex {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-section:nth-of-type(2) .bar:nth-child(1) .fill {
-  transition: 1.1s 0.2s width ease-in-out;
-}
-
-section:nth-of-type(2) .bar.fill {
+.bar.fill {
   left: 0;
   position: absolute;
   top: 0;
@@ -85,20 +68,14 @@ section:nth-of-type(2) .bar.fill {
   padding: 0;
 }
 
-@media screen and (min-width: 600px) {
-  section:nth-of-type(2) .bar .tag {
-    width: 110px;
-  }
-}
 
-section:nth-of-type(2) .bar .tag {
-  left: 0;
-  position: absolute;
-  top: 0;
+.bar .tag {
   background-color: #ab2537fa;
   color: #fff;
   height: 100%;
   width: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .toolSetContainer {
@@ -109,13 +86,6 @@ section:nth-of-type(2) .bar .tag {
   font-weight: 500;
 }
 
-@media screen and (min-width: 600px) {
-  section:nth-of-type(2) .bar span {
-    display: initial;
-  }
-}
-
-section:nth-of-type(2) .bar span {
+.bar span {
   padding: 0 15px 0 0;
-  z-index: 1;
 }

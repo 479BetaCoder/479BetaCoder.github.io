@@ -5,7 +5,8 @@ export default class About extends React.Component {
   // Function to render FE
   renderFE() {
     return (
-      <div>
+      <div data-aos="fade-up">
+        <h3>{`Services:`}</h3>
         <h4>{`FRONT END ENGINEERING`}</h4>
         <p>
           Front End Development is about building visual elements that users see
@@ -15,7 +16,7 @@ export default class About extends React.Component {
           the application to be up and running. Building beautiful user
           interfaces makes me happy.
         </p>
-        <section className="toolSetContainer">
+        <section className="toolSetContainer" data-aos="fade-up">
           <h5>{`Essentials:`}</h5>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "80%" }}>
@@ -37,22 +38,22 @@ export default class About extends React.Component {
           </div>
           <h5>{`FrameWorks and Architecture:`}</h5>
           <div className="bar flex">
-            <div className="bar fill" style={{ width: "90%" }}>
+            <div className="bar fill" style={{ width: "80%" }}>
               <div className="tag bold flex">React Native</div>
             </div>
-            <span>90%</span>
+            <span>80%</span>
           </div>
           <div className="bar flex">
-            <div className="bar fill" style={{ width: "90%" }}>
+            <div className="bar fill" style={{ width: "80%" }}>
               <div className="tag bold flex">Redux</div>
             </div>
-            <span>90%</span>
+            <span>80%</span>
           </div>
           <div className="bar flex">
-            <div className="bar fill" style={{ width: "70%" }}>
+            <div className="bar fill" style={{ width: "60%" }}>
               <div className="tag bold flex">React</div>
             </div>
-            <span>70%</span>
+            <span>60%</span>
           </div>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "50%" }}>
@@ -68,7 +69,7 @@ export default class About extends React.Component {
   // Function to return BE
   renderBE() {
     return (
-      <div style={{ marginTop: 50 }}>
+      <div style={{ marginTop: 50 }} data-aos="fade-up">
         <h4>{`BACK END ENGINEERING`}</h4>
         <p>
           Back End Development is what powers the web. It is the code that
@@ -79,7 +80,7 @@ export default class About extends React.Component {
           Automating Cloud Infrastructure, load balancing and managing access is
           a must for a cloud native application.
         </p>
-        <section className="toolSetContainer">
+        <section className="toolSetContainer" data-aos="fade-up">
           <h5>{`Essentials:`}</h5>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "70%" }}>
@@ -107,10 +108,10 @@ export default class About extends React.Component {
           </div>
           <h5>{`FrameWorks, RTE and Cloud:`}</h5>
           <div className="bar flex">
-            <div className="bar fill" style={{ width: "90%" }}>
+            <div className="bar fill" style={{ width: "80%" }}>
               <div className="tag bold flex">NodeJS</div>
             </div>
-            <span>90%</span>
+            <span>80%</span>
           </div>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "60%" }}>
@@ -138,8 +139,7 @@ export default class About extends React.Component {
   // Function to render About
   renderAbout() {
     return (
-      <div>
-        <h3>{`About:`}</h3>
+      <div data-aos="fade-up">
         <p>
           Hello, my name is Ravi Kumar. I am a Full Stack Developer living in
           Boston, MA. I am currently pursuing my Masters in{" "}
@@ -161,7 +161,7 @@ export default class About extends React.Component {
           <a href="https://www.linkedin.com/in/ravi-kumar-pilla" target="blank">
             <span className="splMention">LinkedIn</span>
           </a>{" "}
-          . I am open to any software developer opportunities starting May 2021.
+          . I am open to Software Developer opportunities starting May 2021.
         </p>
       </div>
     );
@@ -170,7 +170,7 @@ export default class About extends React.Component {
   // Main render
   render() {
     return (
-      <div>
+      <div className="fade-in">
         <div className="avatarContainer">
           <img
             className="avatar"
@@ -181,9 +181,9 @@ export default class About extends React.Component {
         <section className="introContainer">
           {`FULL-STACK SOFTWARE ENGINEER`}
         </section>
-        <section className="aboutContainer">
+        <section className="aboutContainer" data-aos="fade-in">
+          <h3>{`About:`}</h3>
           {this.renderAbout()}
-          <h3>{`Services:`}</h3>
           {this.renderFE()}
           {this.renderBE()}
         </section>

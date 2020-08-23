@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
       <div>
         <section className="cta-section border">
           <div className="inner-container">
-            <h1>Interested in doing a project together?</h1>
+            <h1>Interested in doing projects together?</h1>
             <a
               href="mailto:ravikumar.pilla479@gmail.com"
               className="cta-button"
