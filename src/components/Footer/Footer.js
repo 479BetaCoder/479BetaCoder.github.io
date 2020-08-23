@@ -5,12 +5,12 @@ export default class Footer extends React.Component {
   render() {
     return (
       <div>
-        <section className="cta-section border">
+        <section className="emailSection border">
           <div className="inner-container">
             <h1>Interested in doing projects together?</h1>
             <a
               href="mailto:ravikumar.pilla479@gmail.com"
-              className="cta-button"
+              className="btnEmail"
             >
               Email Me <span className="arrow-right">→</span>
             </a>
@@ -22,6 +22,9 @@ export default class Footer extends React.Component {
               Ravi Kumar &copy;{" "}
               <span id="footer-date">{new Date().getFullYear()}</span>
             </b>
+          </p>
+          <p>
+            <span className="inspiredText">Inspired from <a href="https://benadam.me/" target="blank">Ben Adam</a></span>
           </p>
         </footer>
       </div>
