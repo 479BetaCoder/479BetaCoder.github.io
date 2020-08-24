@@ -5,7 +5,7 @@ export default class About extends React.Component {
   // Function to render FE
   renderFE() {
     return (
-      <div data-aos="fade-up">
+      <div data-aos="fade-bottom">
         <h3>{`Services:`}</h3>
         <h4>{`FRONT END ENGINEERING`}</h4>
         <p>
@@ -69,7 +69,7 @@ export default class About extends React.Component {
   // Function to return BE
   renderBE() {
     return (
-      <div style={{ marginTop: 50 }} data-aos="fade-up">
+      <div style={{ marginTop: 50 }} data-aos="fade-bottom">
         <h4>{`BACK END ENGINEERING`}</h4>
         <p>
           Back End Development is what powers the web. It is the code that
@@ -139,7 +139,7 @@ export default class About extends React.Component {
   // Function to render About
   renderAbout() {
     return (
-      <div data-aos="fade-up">
+      <div>
         <p>
           Hello, my name is Ravi Kumar. I am a Full Stack Developer living in
           Boston, MA. I am currently pursuing my Masters in{" "}
@@ -180,6 +180,10 @@ export default class About extends React.Component {
         </div>
         <section className="introContainer">
           {`FULL-STACK SOFTWARE ENGINEER`}
+        </section>
+        <section className="networkContainer">
+        <a href="https://www.linkedin.com/in/ravi-kumar-pilla" target="blank"><img className="networkAvatar" src={require("../../assets/linkedIn.png")} alt="linkedIn"></img></a>
+        <a href="https://github.com/479BetaCoder" target="blank"><img className="networkAvatar" src={require("../../assets/gitHub.png")} alt="GitHub"></img></a>
         </section>
         <section className="aboutContainer" data-aos="fade-in">
           <h3>{`About:`}</h3>
