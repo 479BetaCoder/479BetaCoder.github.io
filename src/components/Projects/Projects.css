@@ -1,0 +1,36 @@
+.projectsHdrContainer {
+   display: flex;
+   justify-content: center;
+   max-width: 80em;
+   padding: 2em;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.projectsHdrContainer h1 {
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.projectBorder {
+    border-top: 1px solid #f0eeee;
+}
+
+.projectList {
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+.projectsContainer {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.projectsContainer h3 {
+    line-height: 1em;
+    margin-bottom: 2em;
+}
