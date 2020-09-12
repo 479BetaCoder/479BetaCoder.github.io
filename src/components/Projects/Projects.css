@@ -17,6 +17,11 @@
     border-top: 1px solid #f0eeee;
 }
 
+.projectSpace {
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
 .projectList {
     padding-top: 4em;
     padding-bottom: 2em;
