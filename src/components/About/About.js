@@ -114,20 +114,32 @@ export default class About extends React.Component {
             <span>80%</span>
           </div>
           <div className="bar flex">
-            <div className="bar fill" style={{ width: "60%" }}>
+            <div className="bar fill" style={{ width: "40%" }}>
               <div className="tag bold flex">Spring</div>
+            </div>
+            <span>40%</span>
+          </div>
+          <div className="bar flex">
+            <div className="bar fill" style={{ width: "50%" }}>
+              <div className="tag bold flex">AWS</div>
+            </div>
+            <span>50%</span>
+          </div>
+          <div className="bar flex">
+            <div className="bar fill" style={{ width: "60%" }}>
+              <div className="tag bold flex">Terraform</div>
             </div>
             <span>60%</span>
           </div>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "40%" }}>
-              <div className="tag bold flex">AWS</div>
+              <div className="tag bold flex">Docker</div>
             </div>
             <span>40%</span>
           </div>
           <div className="bar flex">
             <div className="bar fill" style={{ width: "40%" }}>
-              <div className="tag bold flex">Terraform</div>
+              <div className="tag bold flex">Kubernetes</div>
             </div>
             <span>40%</span>
           </div>
@@ -173,6 +185,7 @@ export default class About extends React.Component {
       <div className="fade-in">
         <div className="avatarContainer">
           <img
+            width="10em" height="10em"
             className="avatar"
             src={require("../../assets/myAvatar.JPG")}
             alt="RK"
@@ -182,8 +195,22 @@ export default class About extends React.Component {
           {`FULL-STACK SOFTWARE ENGINEER`}
         </section>
         <section className="networkContainer">
-        <a href="https://www.linkedin.com/in/ravi-kumar-pilla" target="blank"><img className="networkAvatar" src={require("../../assets/linkedIn.png")} alt="linkedIn"></img></a>
-        <a href="https://github.com/479BetaCoder" target="blank"><img className="networkAvatar" src={require("../../assets/gitHub.png")} alt="GitHub"></img></a>
+          <a href="https://www.linkedin.com/in/ravi-kumar-pilla" target="blank">
+            <img
+              width="2em" height="2em"
+              className="networkAvatar"
+              src={require("../../assets/linkedIn.png")}
+              alt="linkedIn"
+            ></img>
+          </a>
+          <a href="https://github.com/479BetaCoder" target="blank">
+            <img
+              width="2em" height="2em"
+              className="networkAvatar"
+              src={require("../../assets/gitHub.png")}
+              alt="GitHub"
+            ></img>
+          </a>
         </section>
         <section className="aboutContainer" data-aos="fade-in">
           <h3>{`About:`}</h3>

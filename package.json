@@ -14,13 +14,17 @@
     "react-scripts": "3.4.3",
     "serve": "^11.3.2"
   },
+  "devDependencies": {
+    "spa-http-server": "^0.9.0"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "test:dev": "npm run build && http-server ./build -p 3001 --push-state"
   },
   "eslintConfig": {
     "extends": "react-app"

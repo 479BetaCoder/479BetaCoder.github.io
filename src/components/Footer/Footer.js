@@ -23,9 +23,6 @@ export default class Footer extends React.Component {
               <span id="footer-date">{new Date().getFullYear()}</span>
             </b>
           </p>
-          <p>
-            <span className="inspiredText">Inspired from <a href="https://benadam.me/" target="blank">Ben Adam</a></span>
-          </p>
         </footer>
       </div>
     );
