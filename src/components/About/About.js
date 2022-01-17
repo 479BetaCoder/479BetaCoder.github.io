@@ -154,7 +154,7 @@ export default class About extends React.Component {
       <div>
         <p>
           Hello, my name is Ravi Kumar. I am a Full Stack Developer living in
-          Boston, MA. I am currently pursuing my Masters in{" "}
+          Irving, TX. I am currently working for McKinsey & Company as a Software Engineer 2 after having completed my Masters in{" "}
           <a
             href="https://www.northeastern.edu/graduate/program/master-of-science-in-computer-systems-engineering-14807/"
             target="blank"
@@ -171,9 +171,8 @@ export default class About extends React.Component {
           </a>{" "}
           on several internal as well as client projects. See my work history on{" "}
           <a href="https://www.linkedin.com/in/ravi-kumar-pilla" target="blank">
-            <span className="splMention">LinkedIn</span>
+            <span className="splMention">LinkedIn .</span>
           </a>{" "}
-          . I am open to Software Developer opportunities starting May 2021.
         </p>
       </div>
     );
